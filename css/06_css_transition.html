@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS过度</title>
+    <style type="text/css">
+        p{
+            width:400px;
+            height:150px;
+            background-color: blanchedalmond;
+        }
+        p:hover{
+            width:500px;
+            height:200px;
+            background-color: #ff675b; /*直接过渡*/
+            transition-delay: 200ms; /*转换延迟*/
+            transition-duration: 10ms; /*时间越长，转换速度越慢*/
+            /*-webkit-transition-duration: ;*/ /*对应浏览器的设置*/
+            /*transition-property: background-color;*/ /*设置某些缓慢过渡*/
+            transition-timing-function: ease-in; /*默认liner ease越来越快 ease-in开始慢后面快 ease-out开始快后面慢 ease-in-out前后慢中间快*/
+        }
+    </style>
+</head>
+<body>
+<p>今天的雨和依萍找她爸要钱那天的雨一样大</p>
+</body>
+</html>

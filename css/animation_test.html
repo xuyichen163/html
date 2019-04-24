@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画实例</title>
+    <style type="text/css">
+        .div{
+            text-align: center;
+            /*vertical-align: middle;*/
+        }
+        .img{
+            width:1000px;
+            height:800px;
+            margin-top: 50px;
+            /*vertical-align: middle;*/
+        }
+        html:hover .img{
+            animation-name:igee;
+            animation-delay:500ms;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes igee {
+            to{
+                width:100px;
+                height:100px;
+                margin-top: 5px;
+            }
+        }
+        .p{
+            font-family: 微软雅黑;
+            font-size: 30px;
+            text-shadow: 10px 5px 1px #ffa7b7;
+            opacity: 1; /*透明度*/
+        }
+        html:hover p{
+            transition-delay: 500ms;
+            transition-duration: 1s;
+            font-size: 10px;
+            opacity: 0;/*透明度*/
+        }
+    </style>
+</head>
+<body>
+<div class="div">
+    <img src="323408.jpg" class="img">
+    <p class="p">上海夜景</p>
+</div>
+
+</body>
+</html>

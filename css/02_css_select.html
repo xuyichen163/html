@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建CSS选择</title>
+    <style type="text/css">
+        /* * 选择所有的元素
+        *{
+            font-size:40px;
+            color: #ff203b;
+        }*/
+
+       /* .class 根据类选择*/
+        .class1{
+            font-size:40px;
+            color: #ff203b;
+        }
+
+        /* #id 根据id选择*/
+        #id1{
+            font-size:24px;
+            color: #ff675b;
+        }
+        /* 属性选择器*/
+        [href]{
+            font-size:24px;
+            color: #282bff;
+        }
+        /* a 根据类型选择*/
+        a{
+            font-size:50px;
+            color: #c5ff1c;
+        }
+       /*a属性鼠标经过之后的变化*/
+        a:hover{
+            color: #282bff;
+        }
+    </style>
+</head>
+<body>
+    <a class="class1">一二三四五</a> <!--class 是全局属性-->
+    <br>
+    <a id="id1">一二三四五</a>
+    <br>
+    <a href="01_css_primary.html">一二三四五</a>
+    <br>
+    <a>一二三四五物</a>
+    <p>大河向东流</p>
+    <h1>四月不减肥，五月徒伤悲</h1>
+</body>
+</html>

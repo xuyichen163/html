@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建动画</title>
+    <style type="text/css">
+        p{
+            width:100px;
+            height:100px;
+            background-color: #ff675b;
+        }
+        p:hover{
+            animation-delay: 5s; /*转换间隔*/
+            animation-duration: 200ms;
+            animation-name: play; /*动画名字*/
+            animation-iteration-count: infinite; /*重复次数 infinite无限次  2两次*/
+            animation-direction: alternate; /*转换方向 alternate反方向运行*/
+        }
+        @keyframes play {
+            /*循环的起始大小*/
+            from{
+                width:100px;
+                height:100px;
+                background-color: #ff675b;
+            }
+            33%{
+                width:200px;
+                height:200px;
+                background-color: aquamarine;
+            }
+            66%{
+                width:200px;
+                height:200px;
+                background-color: brown;
+            }
+            /*循环的最终大小*/
+            to{
+                width:500px;
+                height:500px;
+                background-color: #414fff;
+            }
+        }
+    </style>
+</head>
+<body>
+<p></p>
+</body>
+</html>

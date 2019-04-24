@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建盒子模型</title>
+    <style type="text/css">
+        .bbb{
+            border:1px dotted black; /*边框粗细，样式，颜色*/
+            background-color: #62ffe4;
+            text-align: center;
+            /*内边距设置 padding*/
+            /*padding: 100px 50px;*/ /*上下100px 左右50px*/
+            padding: 100px 50px 80px 10px; /*上右下左*/
+            /*padding-top: 100px; !*内边距 边框到顶端的距离*!
+            padding-left: 100px;!*内边距 边框到左边的距离*!
+            padding-right: 100px;!*内边距 边框到右边的距离*!
+            padding-bottom: 100px;!*内边距 边框到下边的距离*!*/
+
+            /*外边距设置 距离外边框 margin*/
+            margin: 100px 50px 80px 10px; /*上下右左*/
+
+            background-clip:content-box ; /*背景作用区域  content-box只作于内容 padding-box只作用于内边距内 border-box作用于内边距和边框*/
+        }
+    </style>
+</head>
+<body>
+<div class="bbb">一是一
+
+</div>
+</body>
+</html>

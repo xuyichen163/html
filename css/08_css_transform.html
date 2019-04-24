@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css使用变换</title>
+    <style type="text/css">
+        p{
+            width:100px;
+            height:100px;
+            background-color: #ff675b;
+        }
+        p:hover{
+            width:100px;
+            height:100px;
+            background-color: #ff675b;
+            transform: rotate(-30deg); /*转换角度 正数顺时针 负数逆时针*/
+            transform-origin: top right; /*设置旋转锚点*/
+            /*transform:scalex(3); */ /*往外扩充放大倍数 scalex放大x的大小 */
+        }
+    </style>
+</head>
+<body>
+<p></p>
+</body>
+</html>

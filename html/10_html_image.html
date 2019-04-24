@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建图片</title>
+</head>
+<body>
+1.链接到某一网页<br>
+<a href="09_html_from3.html" target="_blank">
+<img src="../4.jpg" width="500px" height="320" alt="下载按钮"><br>
+<!--src 图片地址-->
+<!--alt 备用图片内容-->
+</a>
+
+2.分区域连接到不同的网页<br>
+<img src="../4.jpg" width="600" heigh="400" usemap="#map1">
+<map name="map1">
+    <!--正方形-->
+    <!--coords： 左上右下-->
+    <area href="09_html_from3.html" shape="rect" coords="100,100,200,200" target="_blank">
+    <area href="https://www.baidu.com/" shape="rect" coords="200,200,300,300" target="_blank">
+    <area href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10370626048720225548%22%7D&n_type=0&p_from=1" shape="rect" coords="300,300,400,400" target="_blank">
+</map>
+<br>
+<img src="../circle.jpg" width="200" usemap="#c">
+<map name="c">
+    <!--圆形-->
+   <!-- coords：圆心坐标x,圆心坐标y，圆的半径-->
+    <area href="09_html_from3.html" shape="circle" coords="80,80,100" target="_blank">
+</map>
+
+</body>
+</html>

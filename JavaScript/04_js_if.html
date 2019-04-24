@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件判断语句</title>
+    <script>
+        var pwd = prompt("请输入你的密码",""); /*pwd是字符串*/
+
+        if(pwd == "132462"){
+            document.write("<h1>你的密码为："+pwd+"</h1>")
+        }else if(pwd>12 && pwd<10000){
+            document.write("登录失败");
+        }else{
+            document.write("请重新输入");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
